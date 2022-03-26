@@ -93,7 +93,7 @@ int main(int argc, char *argv[])
     //
     const string_t dotnetlib_path = root_path + STR("DotNetLib.dll");
     const char_t *dotnet_type = STR("DotNetLib.Lib, DotNetLib");
-    const char_t *dotnet_type_method = STR("Hello");
+    const char_t *dotnet_type_method = STR("TestCultureInfoCompareInfo");
     // <SnippetLoadAndGet>
     // Function pointer to managed delegate
     component_entry_point_fn hello = nullptr;
@@ -115,18 +115,18 @@ int main(int argc, char *argv[])
         const char_t *message;
         int number;
     };
-    for (int i = 0; i < 3; ++i)
     {
         // <SnippetCallManaged>
         lib_args args
         {
             STR("from host!"),
-            i
-        };
-
+            0
+        };    
         hello(&args, sizeof(args));
-        // </SnippetCallManaged>
+
     }
+
+    // </SnippetCallManaged>
 
 #ifdef NET5_0
     // Function pointer to managed delegate with non-default signature

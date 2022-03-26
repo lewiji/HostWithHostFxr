@@ -2,7 +2,7 @@
   "profiles": {
     "NativeHost": {
       "commandName": "Executable",
-      "executablePath": "$(SolutionDir)\\..\\bin\\$(Configuration)\\nativehost.exe",
+      "executablePath": "$(MSBuildProjectDirectory)/../../bin/Debug/nativehost",
       "nativeDebugging": true
     }
   }

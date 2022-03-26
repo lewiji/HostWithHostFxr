@@ -5,6 +5,8 @@
 /HostWithHostFxr/bin/Debug
 /HostWithHostFxr/src/.vs/HostWithHostFxr
 /HostWithHostFxr/src/DotNetLib/obj
-/HostWithHostFxr/src/NativeHost/bin/Debug/net5.0
+/HostWithHostFxr/src/NativeHost/bin/Debug/
 /HostWithHostFxr/src/NativeHost/Debug
 /HostWithHostFxr/src/NativeHost/obj
+**/.idea/
+/HostWithHostFxr/src/HostWithHostFxr.sln.DotSettings.user

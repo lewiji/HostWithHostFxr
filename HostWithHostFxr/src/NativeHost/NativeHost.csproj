@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net5.0</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -92,7 +92,7 @@
 
     <Exec Command="g++ $(SourceFiles) $(IncPaths) $(PreprocessorDefines) -std=c++11 -o &quot;$(NativeOutputFilePath)&quot; $(CompilerArgs) $(LinkArgs)"
           WorkingDirectory="$(NativeObjDir)"
-          ConsoleToMsBuild="true" />
+    />
 
     <Copy SourceFiles="$(NetHostDir)/$(NetHostName)"
           DestinationFolder="$(NativeBinDir)"
@@ -114,7 +114,7 @@
 
     <Exec Command="&quot;$(MSVCCompilerPath)&quot; $(SourceFiles) $(IncPaths) $(PreprocessorDefines) $(CompilerArgs) /link $(LibPaths) /out:&quot;$(NativeOutputFilePath)&quot;"
           WorkingDirectory="$(NativeObjDir)"
-          ConsoleToMsBuild="true" />
+          />
 
     <Copy SourceFiles="$(NetHostDir)/$(NetHostName)"
           DestinationFolder="$(NativeBinDir)"
